@@ -73,7 +73,7 @@ class Manager:
                 # Tempo de Execução
                 time.sleep(0.20)
 
-                # Conecção para o db
+                # Conexão para o db
                 db = sqlite3.connect("connection")
 
                 # Criação de objeto para db
@@ -97,7 +97,7 @@ class Manager:
                     db.close()
                     # Break para variavel running
                     running = False
-                    # Mensagem de encerramento para o ussuário
+                    # Mensagem de encerramento para o usuário
                     print("SAINDO DO MENU")
                     # Tempo de execução
                     time.sleep(2)
@@ -162,7 +162,7 @@ class Manager:
 
         count = 0
         count_2 = 0
-        # Estabelecendo conecção com db
+        # Estabelecendo conexão com db
         db = sqlite3.connect("connection")
         # Variavel de dados de db
         cursor = db.cursor()
@@ -287,11 +287,11 @@ class Manager:
             self.menu()
         else:
             # Mensagem de erro na conecção do db
-            print("ERROR! ESTA CONECÃO NÃO EXISTE")
+            print("ERROR! ESTA CONEXÃO NÃO EXISTE")
             # Tempo de execução
             time.sleep(3)
             # Mensagem de orientação para o usuário
-            print("CRIE UM NOVO ARQUIVO DE CONECÇÃO")
+            print("CRIE UM NOVO ARQUIVO DE CONEXÃO")
             # Tempo de exucução
             time.sleep(3)
             # Variavel que vai guardar a conecção com db
